@@ -1,0 +1,1209 @@
+
+        /* All existing CSS remains the same */
+        :root {
+            --bg-color: #0a0a0a;
+            --text-color: #00ff41;
+            --terminal-bg: #111;
+            --terminal-border: #333;
+            --header-bg: #222;
+            --nav-bg: #1a1a1a;
+            --section-bg: rgba(0, 255, 65, 0.05);
+            --section-border: #00ff41;
+            --project-bg: rgba(0, 255, 65, 0.08);
+            --cert-bg: rgba(255, 153, 0, 0.08);
+            --cert-border: #ff9900;
+            --tech-tag-bg: rgba(0, 255, 65, 0.2);
+            --command-color: #00ccff;
+            --highlight-color: #ff9900;
+            --mumps-command-color: #ff6b6b;
+            --global-ref-color: #4ecdc4;
+            --contact-bg: rgba(0, 255, 65, 0.08);
+            --contact-border: rgba(0, 255, 65, 0.2);
+            --scrollbar-track: #1a1a1a;
+            --scrollbar-thumb: #333;
+            --scrollbar-thumb-hover: #444;
+            --arrow-bg: rgba(0, 255, 65, 0.8);
+            --arrow-hover: rgba(0, 255, 65, 1);
+            --arrow-disabled: rgba(0, 255, 65, 0.3);
+            --suspended-bg: #0a0a0a;
+            --suspended-text: #00ff41;
+            --power-button: #ff9900;
+            --font-family: 'Courier New', monospace;
+
+            /* Windows terminal colors - these will be overridden by themes */
+            --windows-header-bg: #012456;
+            --windows-title-color: #ffffff;
+            --windows-button-bg: transparent;
+            --windows-button-hover: #3e3e42;
+            --windows-terminal-bg: #0c0c0c;
+            --windows-terminal-text: #cccccc;
+            --windows-cursor: #cccccc;
+            --windows-nav-bg: #1a1a1a;
+            --windows-section-bg: rgba(255, 255, 255, 0.05);
+            --windows-section-border: #0078d7;
+            --windows-tech-tag-bg: rgba(255, 255, 255, 0.1);
+        }
+
+        /* Dark Theme */
+        [data-theme="dark"] {
+            --bg-color: #0a0a0a;
+            --text-color: #00ff41;
+            --terminal-bg: #111;
+            --terminal-border: #333;
+            --header-bg: #222;
+            --nav-bg: #1a1a1a;
+            --section-bg: rgba(0, 255, 65, 0.05);
+            --section-border: #00ff41;
+            --project-bg: rgba(0, 255, 65, 0.08);
+            --cert-bg: rgba(255, 153, 0, 0.08);
+            --cert-border: #ff9900;
+            --tech-tag-bg: rgba(0, 255, 65, 0.2);
+            --command-color: #00ccff;
+            --highlight-color: #ff9900;
+            --mumps-command-color: #ff6b6b;
+            --global-ref-color: #4ecdc4;
+            --contact-bg: rgba(0, 255, 65, 0.08);
+            --contact-border: rgba(0, 255, 65, 0.2);
+            --scrollbar-track: #1a1a1a;
+            --scrollbar-thumb: #333;
+            --scrollbar-thumb-hover: #444;
+            --arrow-bg: rgba(0, 255, 65, 0.8);
+            --arrow-hover: rgba(0, 255, 65, 1);
+            --arrow-disabled: rgba(0, 255, 65, 0.3);
+            --suspended-bg: #0a0a0a;
+            --suspended-text: #00ff41;
+            --power-button: #ff9900;
+
+            /* Windows dark theme colors */
+            --windows-header-bg: #0078d4;
+            --windows-title-color: #ffffff;
+            --windows-terminal-bg: #0c0c0c;
+            --windows-terminal-text: #cccccc;
+            --windows-cursor: #cccccc;
+            --windows-nav-bg: #1a1a1a;
+            --windows-section-bg: rgba(0, 255, 65, 0.05);
+            --windows-section-border: #00ff41;
+            --windows-tech-tag-bg: rgba(0, 255, 65, 0.2);
+        }
+
+        /* Light Theme */
+        [data-theme="light"] {
+            --bg-color: #f5f5f5;
+            --text-color: #0066cc;
+            --terminal-bg: #ffffff;
+            --terminal-border: #ddd;
+            --header-bg: #f0f0f0;
+            --nav-bg: #e8e8e8;
+            --section-bg: rgba(0, 102, 204, 0.05);
+            --section-border: #0066cc;
+            --project-bg: rgba(0, 102, 204, 0.08);
+            --cert-bg: rgba(255, 153, 0, 0.08);
+            --cert-border: #ff9900;
+            --tech-tag-bg: rgba(0, 102, 204, 0.2);
+            --command-color: #0066cc;
+            --highlight-color: #ff6600;
+            --mumps-command-color: #cc0000;
+            --global-ref-color: #009966;
+            --contact-bg: rgba(0, 102, 204, 0.08);
+            --contact-border: rgba(0, 102, 204, 0.2);
+            --scrollbar-track: #e0e0e0;
+            --scrollbar-thumb: #999;
+            --scrollbar-thumb-hover: #666;
+            --arrow-bg: rgba(0, 86, 179, 0.8);
+            --arrow-hover: rgba(0, 86, 179, 1);
+            --arrow-disabled: rgba(0, 86, 179, 0.3);
+            --suspended-bg: #f5f5f5;
+            --suspended-text: #0066cc;
+            --power-button: #ff6600;
+
+            /* Windows light theme colors */
+            --windows-header-bg: #0078d4;
+            --windows-title-color: #ffffff;
+            --windows-terminal-bg: #ffffff;
+            --windows-terminal-text: #333333;
+            --windows-cursor: #333333;
+            --windows-nav-bg: #e8e8e8;
+            --windows-section-bg: rgba(0, 102, 204, 0.05);
+            --windows-section-border: #0066cc;
+            --windows-tech-tag-bg: rgba(0, 102, 204, 0.2);
+        }
+
+        /* Corporate Theme */
+        [data-theme="corporate"] {
+            --bg-color: #f8f9fa;
+            --text-color: #343a40;
+            --terminal-bg: #ffffff;
+            --terminal-border: #dee2e6;
+            --header-bg: #e9ecef;
+            --nav-bg: #f1f3f5;
+            --section-bg: rgba(52, 58, 64, 0.05);
+            --section-border: #343a40;
+            --project-bg: rgba(52, 58, 64, 0.08);
+            --cert-bg: rgba(255, 193, 7, 0.08);
+            --cert-border: #ffc107;
+            --tech-tag-bg: rgba(52, 58, 64, 0.2);
+            --command-color: #0056b3;
+            --highlight-color: #e83e8c;
+            --mumps-command-color: #dc3545;
+            --global-ref-color: #20c997;
+            --contact-bg: rgba(52, 58, 64, 0.08);
+            --contact-border: rgba(52, 58, 64, 0.2);
+            --scrollbar-track: #f1f3f5;
+            --scrollbar-thumb: #adb5bd;
+            --scrollbar-thumb-hover: #6c757d;
+            --arrow-bg: rgba(0, 86, 179, 0.8);
+            --arrow-hover: rgba(0, 86, 179, 1);
+            --arrow-disabled: rgba(0, 86, 179, 0.3);
+            --suspended-bg: #f8f9fa;
+            --suspended-text: #343a40;
+            --power-button: #e83e8c;
+
+            /* Windows corporate theme colors */
+            --windows-header-bg: #0078d4;
+            --windows-title-color: #ffffff;
+            --windows-terminal-bg: #ffffff;
+            --windows-terminal-text: #343a40;
+            --windows-cursor: #343a40;
+            --windows-nav-bg: #f1f3f5;
+            --windows-section-bg: rgba(52, 58, 64, 0.05);
+            --windows-section-border: #343a40;
+            --windows-tech-tag-bg: rgba(52, 58, 64, 0.2);
+        }
+
+        /* Cosmic Theme */
+        [data-theme="cosmic"] {
+            --bg-color: #0f0c29;
+            --text-color: #e2ded3;
+            --terminal-bg: #1a1a2e;
+            --terminal-border: #16213e;
+            --header-bg: #0f3460;
+            --nav-bg: #16213e;
+            --section-bg: rgba(226, 222, 211, 0.05);
+            --section-border: #e2ded3;
+            --project-bg: rgba(226, 222, 211, 0.08);
+            --cert-bg: rgba(237, 117, 99, 0.08);
+            --cert-border: #ed7563;
+            --tech-tag-bg: rgba(226, 222, 211, 0.2);
+            --command-color: #53d8fb;
+            --highlight-color: #f18f01;
+            --mumps-command-color: #c73e1d;
+            --global-ref-color: #6bcf7f;
+            --contact-bg: rgba(226, 222, 211, 0.08);
+            --contact-border: rgba(226, 222, 211, 0.2);
+            --scrollbar-track: #16213e;
+            --scrollbar-thumb: #0f3460;
+            --scrollbar-thumb-hover: #1a1a2e;
+            --arrow-bg: rgba(83, 216, 251, 0.8);
+            --arrow-hover: rgba(83, 216, 251, 1);
+            --arrow-disabled: rgba(83, 216, 251, 0.3);
+            --suspended-bg: #0f0c29;
+            --suspended-text: #e2ded3;
+            --power-button: #f18f01;
+
+            /* Windows cosmic theme colors */
+            --windows-header-bg: #0f3460;
+            --windows-title-color: #e2ded3;
+            --windows-terminal-bg: #1a1a2e;
+            --windows-terminal-text: #e2ded3;
+            --windows-cursor: #e2ded3;
+            --windows-nav-bg: #16213e;
+            --windows-section-bg: rgba(226, 222, 211, 0.05);
+            --windows-section-border: #e2ded3;
+            --windows-tech-tag-bg: rgba(226, 222, 211, 0.2);
+        }
+
+        /* Gruvbox Theme */
+        [data-theme="gruvbox"] {
+            --bg-color: #282828;
+            --text-color: #ebdbb2;
+            --terminal-bg: #3c3836;
+            --terminal-border: #504945;
+            --header-bg: #32302f;
+            --nav-bg: #3c3836;
+            --section-bg: rgba(235, 219, 178, 0.05);
+            --section-border: #ebdbb2;
+            --project-bg: rgba(235, 219, 178, 0.08);
+            --cert-bg: rgba(251, 73, 52, 0.08);
+            --cert-border: #fb4934;
+            --tech-tag-bg: rgba(235, 219, 178, 0.2);
+            --command-color: #83a598;
+            --highlight-color: #fabd2f;
+            --mumps-command-color: #fb4934;
+            --global-ref-color: #8ec07c;
+            --contact-bg: rgba(235, 219, 178, 0.08);
+            --contact-border: rgba(235, 219, 178, 0.2);
+            --scrollbar-track: #3c3836;
+            --scrollbar-thumb: #504945;
+            --scrollbar-thumb-hover: #665c54;
+            --arrow-bg: rgba(131, 165, 152, 0.8);
+            --arrow-hover: rgba(131, 165, 152, 1);
+            --arrow-disabled: rgba(131, 165, 152, 0.3);
+            --suspended-bg: #282828;
+            --suspended-text: #ebdbb2;
+            --power-button: #fabd2f;
+
+            /* Windows gruvbox theme colors */
+            --windows-header-bg: #32302f;
+            --windows-title-color: #ebdbb2;
+            --windows-terminal-bg: #3c3836;
+            --windows-terminal-text: #ebdbb2;
+            --windows-cursor: #ebdbb2;
+            --windows-nav-bg: #3c3836;
+            --windows-section-bg: rgba(235, 219, 178, 0.05);
+            --windows-section-border: #ebdbb2;
+            --windows-tech-tag-bg: rgba(235, 219, 178, 0.2);
+        }
+
+        /* Pride Theme */
+        [data-theme="pride"] {
+            --bg-color: #141414;
+            --text-color: #ffffff;
+            --terminal-bg: #1e1e1e;
+            --terminal-border: #333333;
+            --header-bg: #2d2d2d;
+            --nav-bg: #252525;
+            --section-bg: rgba(255, 255, 255, 0.05);
+            --section-border: #e40303;
+            --project-bg: rgba(255, 255, 255, 0.08);
+            --cert-bg: rgba(255, 153, 0, 0.08);
+            --cert-border: #ff8c00;
+            --tech-tag-bg: rgba(255, 255, 255, 0.2);
+            --command-color: #0080ff;
+            --highlight-color: #ffed00;
+            --mumps-command-color: #e40303;
+            --global-ref-color: #008018;
+            --contact-bg: rgba(255, 255, 255, 0.08);
+            --contact-border: rgba(255, 255, 255, 0.2);
+            --scrollbar-track: #252525;
+            --scrollbar-thumb: #444444;
+            --scrollbar-thumb-hover: #555555;
+            --arrow-bg: rgba(0, 128, 255, 0.8);
+            --arrow-hover: rgba(0, 128, 255, 1);
+            --arrow-disabled: rgba(0, 128, 255, 0.3);
+            --suspended-bg: #141414;
+            --suspended-text: #ffffff;
+            --power-button: #ffed00;
+
+            /* Windows pride theme colors */
+            --windows-header-bg: #e40303;
+            --windows-title-color: #ffffff;
+            --windows-terminal-bg: #1e1e1e;
+            --windows-terminal-text: #ffffff;
+            --windows-cursor: #ffffff;
+            --windows-nav-bg: #252525;
+            --windows-section-bg: rgba(255, 255, 255, 0.05);
+            --windows-section-border: #e40303;
+            --windows-tech-tag-bg: rgba(255, 255, 255, 0.2);
+        }
+
+        /* Solarized Theme */
+        [data-theme="solarized"] {
+            --bg-color: #002b36;
+            --text-color: #839496;
+            --terminal-bg: #073642;
+            --terminal-border: #586e75;
+            --header-bg: #002b36;
+            --nav-bg: #073642;
+            --section-bg: rgba(131, 148, 150, 0.05);
+            --section-border: #839496;
+            --project-bg: rgba(131, 148, 150, 0.08);
+            --cert-bg: rgba(220, 50, 47, 0.08);
+            --cert-border: #dc322f;
+            --tech-tag-bg: rgba(131, 148, 150, 0.2);
+            --command-color: #268bd2;
+            --highlight-color: #b58900;
+            --mumps-command-color: #dc322f;
+            --global-ref-color: #2aa198;
+            --contact-bg: rgba(131, 148, 150, 0.08);
+            --contact-border: rgba(131, 148, 150, 0.2);
+            --scrollbar-track: #073642;
+            --scrollbar-thumb: #586e75;
+            --scrollbar-thumb-hover: #657b83;
+            --arrow-bg: rgba(38, 139, 210, 0.8);
+            --arrow-hover: rgba(38, 139, 210, 1);
+            --arrow-disabled: rgba(38, 139, 210, 0.3);
+            --suspended-bg: #002b36;
+            --suspended-text: #839496;
+            --power-button: #b58900;
+
+            /* Windows solarized theme colors */
+            --windows-header-bg: #073642;
+            --windows-title-color: #839496;
+            --windows-terminal-bg: #073642;
+            --windows-terminal-text: #839496;
+            --windows-cursor: #839496;
+            --windows-nav-bg: #073642;
+            --windows-section-bg: rgba(131, 148, 150, 0.05);
+            --windows-section-border: #839496;
+            --windows-tech-tag-bg: rgba(131, 148, 150, 0.2);
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            background-color: var(--bg-color);
+            color: var(--text-color);
+            font-family: var(--font-family);
+            padding: 20px;
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            transition: background-color 0.3s ease, color 0.3s ease;
+        }
+
+        .theme-toggle {
+            position: fixed;
+            top: 20px;
+            right: 20px;
+            background-color: var(--terminal-bg);
+            border: 1px solid var(--terminal-border);
+            color: var(--text-color);
+            padding: 8px 12px;
+            border-radius: 20px;
+            cursor: pointer;
+            font-family: inherit;
+            font-size: 12px;
+            z-index: 1000;
+            transition: all 0.3s ease;
+        }
+
+        .theme-toggle:hover {
+            background-color: var(--section-bg);
+            transform: scale(1.05);
+        }
+
+        .terminal {
+            width: 90%;
+            max-width: 900px;
+            background-color: var(--terminal-bg);
+            border-radius: 10px;
+            box-shadow: 0 0 20px rgba(0, 255, 65, 0.3);
+            overflow: hidden;
+            border: 1px solid var(--terminal-border);
+            margin-bottom: 20px;
+            transition: opacity 0.5s ease, transform 0.5s ease, width 0.3s ease, max-width 0.3s ease;
+        }
+
+        .terminal.maximized {
+            width: 100% !important;
+            max-width: 100% !important;
+            height: 100vh;
+            margin: 0;
+            border-radius: 0;
+            position: fixed;
+            top: 0;
+            left: 0;
+            z-index: 9999;
+        }
+
+        .terminal.maximized .terminal-body {
+            height: calc(100vh - 120px);
+        }
+
+        .terminal-header {
+            background-color: var(--header-bg);
+            padding: 10px 15px;
+            display: flex;
+            align-items: center;
+            border-bottom: 1px solid var(--terminal-border);
+        }
+
+        /* Windows terminal style */
+        .terminal.windows .terminal-header {
+            background-color: var(--windows-header-bg);
+            border-bottom: 1px solid var(--windows-section-border);
+            justify-content: space-between;
+            padding: 5px 10px;
+        }
+
+        .terminal.windows .terminal-title {
+            order: 1;
+            color: var(--windows-title-color);
+            font-size: 12px;
+            font-weight: normal;
+            text-align: left;
+            padding-left: 10px;
+            opacity: 1;
+        }
+
+        .terminal.windows .terminal-buttons {
+            order: 2;
+            display: flex;
+            gap: 2px;
+        }
+
+        .terminal.windows .btn {
+            width: 45px;
+            height: 30px;
+            border-radius: 0;
+            background-color: var(--windows-button-bg);
+            border: none;
+            color: var(--windows-title-color);
+            font-size: 16px;
+            font-weight: normal;
+            transition: background-color 0.2s ease;
+        }
+
+        .terminal.windows .btn:hover {
+            background-color: var(--windows-button-hover);
+        }
+
+        .terminal.windows .btn.close:hover {
+            background-color: #e81123;
+            color: white;
+        }
+
+        .terminal.windows .btn.minimize:hover {
+            background-color: var(--windows-button-hover);
+        }
+
+        .terminal.windows .btn.maximize:hover {
+            background-color: var(--windows-button-hover);
+        }
+
+        .terminal.windows .terminal-body {
+            background-color: var(--windows-terminal-bg);
+            color: var(--windows-terminal-text);
+            font-family: 'Consolas', 'Courier New', monospace;
+        }
+
+        .terminal.windows .command-input {
+            color: var(--windows-terminal-text);
+        }
+
+        .terminal.windows .cursor {
+            background-color: var(--windows-cursor);
+        }
+
+        .terminal.windows .prompt {
+            color: var(--windows-terminal-text);
+        }
+
+        .terminal.windows .nav-buttons {
+            background-color: var(--windows-nav-bg);
+            border-bottom: 1px solid var(--windows-section-border);
+        }
+
+        .terminal.windows .nav-btn {
+            background-color: rgba(255, 255, 255, 0.1);
+            border: 1px solid rgba(255, 255, 255, 0.2);
+            color: var(--windows-terminal-text);
+        }
+
+        .terminal.windows .nav-btn:hover {
+            background-color: rgba(255, 255, 255, 0.2);
+            box-shadow: none;
+        }
+
+        .terminal.windows .section {
+            background-color: var(--windows-section-bg);
+            border-left: 3px solid var(--windows-section-border);
+        }
+
+        .terminal.windows .tech-tag {
+            background-color: var(--windows-tech-tag-bg);
+        }
+
+        .terminal.windows .ascii-art {
+            color: var(--windows-terminal-text);
+        }
+
+        .terminal.windows .output {
+            color: var(--windows-terminal-text);
+        }
+
+        .terminal.windows .command {
+            color: var(--windows-terminal-text);
+        }
+
+        .terminal.windows .highlight {
+            color: var(--highlight-color);
+        }
+
+        .terminal.windows .mumps-command {
+            color: var(--mumps-command-color);
+        }
+
+        .terminal.windows .global-ref {
+            color: var(--global-ref-color);
+        }
+
+        .terminal.windows .error-message {
+            color: var(--mumps-command-color);
+        }
+
+        .terminal.windows .funny-message {
+            color: var(--highlight-color);
+        }
+
+        .terminal-buttons {
+            display: flex;
+            gap: 8px;
+        }
+
+        .btn {
+            width: 15px;
+            height: 15px;
+            border-radius: 50%;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            position: relative;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 10px;
+            font-weight: bold;
+            color: rgba(0, 0, 0, 0.6);
+        }
+
+        /* Add hover effect with circle for Mac style */
+        .terminal:not(.windows) .btn:hover::before {
+            content: '';
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            width: 25px;
+            height: 25px;
+            border-radius: 50%;
+            opacity: 0.3;
+            z-index: -1;
+        }
+
+        .terminal:not(.windows) .btn.close:hover::before {
+            background-color: #ff5f56;
+        }
+
+        .terminal:not(.windows) .btn.minimize:hover::before {
+            background-color: #ffbd2e;
+        }
+
+        .terminal:not(.windows) .btn.maximize:hover::before {
+            background-color: #27c93f;
+        }
+
+        .close {
+            background-color: #ff5f56;
+        }
+
+        .minimize {
+            background-color: #ffbd2e;
+        }
+
+        .maximize {
+            background-color: #27c93f;
+        }
+
+        .terminal-title {
+            flex: 1;
+            text-align: center;
+            color: var(--text-color);
+            opacity: 0.7;
+            font-size: 14px;
+        }
+
+        .nav-buttons {
+            background-color: var(--nav-bg);
+            padding: 15px;
+            display: flex;
+            justify-content: center;
+            gap: 15px;
+            flex-wrap: wrap;
+            border-bottom: 1px solid var(--terminal-border);
+        }
+
+        .nav-btn {
+            background-color: var(--section-bg);
+            border: 1px solid var(--section-border);
+            color: var(--text-color);
+            padding: 8px 16px;
+            border-radius: 5px;
+            cursor: pointer;
+            font-family: inherit;
+            font-size: 14px;
+            transition: all 0.3s ease;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+
+        .nav-btn:hover {
+            background-color: var(--project-bg);
+            box-shadow: 0 0 10px rgba(0, 255, 65, 0.5);
+            transform: translateY(-2px);
+        }
+
+        .nav-btn:active {
+            transform: translateY(0);
+        }
+
+        .terminal-body {
+            padding: 20px;
+            height: 500px;
+            overflow-y: auto;
+        }
+
+        .terminal-body::-webkit-scrollbar {
+            width: 8px;
+        }
+
+        .terminal-body::-webkit-scrollbar-track {
+            background: var(--scrollbar-track);
+        }
+
+        .terminal-body::-webkit-scrollbar-thumb {
+            background: var(--scrollbar-thumb);
+            border-radius: 4px;
+        }
+
+        .terminal-body::-webkit-scrollbar-thumb:hover {
+            background: var(--scrollbar-thumb-hover);
+        }
+
+        .output {
+            margin-bottom: 20px;
+            white-space: pre-wrap;
+            word-wrap: break-word;
+        }
+
+        .command-line {
+            display: flex;
+            align-items: center;
+            margin-bottom: 10px;
+        }
+
+        .prompt {
+            margin-right: 10px;
+            color: var(--text-color);
+        }
+
+        .command-input {
+            background: none;
+            border: none;
+            color: var(--text-color);
+            font-family: inherit;
+            font-size: 16px;
+            outline: none;
+            flex: 1;
+        }
+
+        .cursor {
+            display: inline-block;
+            width: 2px;
+            height: 18px;
+            background-color: var(--text-color);
+        }
+
+        .section {
+            margin-bottom: 20px;
+            padding: 15px;
+            background-color: var(--section-bg);
+            border-left: 3px solid var(--section-border);
+        }
+
+        .section-title {
+            color: var(--text-color);
+            font-size: 18px;
+            margin-bottom: 10px;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+
+        .project {
+            margin-bottom: 15px;
+            padding: 10px;
+            background-color: var(--project-bg);
+            border-radius: 5px;
+        }
+
+        .project-title {
+            color: var(--command-color);
+            font-weight: bold;
+            margin-bottom: 5px;
+        }
+
+        .certification {
+            margin-bottom: 15px;
+            padding: 10px;
+            background-color: var(--cert-bg);
+            border-radius: 5px;
+            border-left: 3px solid var(--cert-border);
+        }
+
+        .certification-title {
+            color: var(--highlight-color);
+            font-weight: bold;
+            margin-bottom: 5px;
+        }
+
+        .tech-tag {
+            display: inline-block;
+            background-color: var(--tech-tag-bg);
+            padding: 2px 8px;
+            border-radius: 3px;
+            margin-right: 5px;
+            margin-bottom: 5px;
+            font-size: 12px;
+        }
+
+        .help-item {
+            margin-bottom: 5px;
+        }
+
+        .command {
+            color: var(--command-color);
+        }
+
+        .contact-info {
+            margin-bottom: 10px;
+        }
+
+        .highlight {
+            color: var(--highlight-color);
+        }
+
+        .ascii-art {
+            color: var(--text-color);
+            font-size: 14px;
+            line-height: 1.2;
+            margin-bottom: 20px;
+            white-space: pre;
+        }
+
+        .cert-badge {
+            display: inline-block;
+            background-color: rgba(255, 153, 0, 0.2);
+            color: var(--highlight-color);
+            padding: 3px 10px;
+            border-radius: 15px;
+            font-size: 12px;
+            margin-right: 5px;
+        }
+
+        .contact-card {
+            background-color: var(--contact-bg);
+            padding: 8px;
+            border-radius: 5px;
+            margin-bottom: 12px;
+            border: 1px solid var(--contact-border);
+            width: 90%;
+            max-width: 400px;
+        }
+
+        .contact-method {
+            display: flex;
+            align-items: center;
+            margin-bottom: 2px;
+            padding: 0;
+        }
+
+        .contact-icon {
+            margin-right: 6px;
+            font-size: 14px;
+        }
+
+        .contact-link {
+            color: var(--command-color);
+            text-decoration: none;
+            transition: color 0.3s ease;
+            font-size: 13px;
+        }
+
+        .contact-link:hover {
+            color: var(--highlight-color);
+            text-decoration: underline;
+        }
+
+        .contact-method .highlight {
+            font-size: 13px;
+            margin-bottom: 0;
+            line-height: 1.2;
+        }
+
+        .contact-method > div > div:last-child {
+            margin-top: 0;
+        }
+
+        .mumps-command {
+            color: var(--mumps-command-color);
+            font-weight: bold;
+        }
+
+        .global-ref {
+            color: var(--global-ref-color);
+        }
+
+        .error-message {
+            color: #ff6b6b;
+            font-weight: bold;
+        }
+
+        .funny-message {
+            color: #ffcc00;
+            font-style: italic;
+        }
+
+        /* Cards container with navigation arrows */
+        .cards-section {
+            width: 90%;
+            max-width: 900px;
+            display: none;
+            margin-top: 20px;
+            position: relative;
+        }
+
+        .cards-container {
+            overflow-x: hidden;
+            padding: 20px 60px;
+        }
+
+        .cards-wrapper {
+            display: flex;
+            gap: 20px;
+            transition: transform 0.3s ease;
+        }
+
+        .card {
+            background-color: var(--terminal-bg);
+            border: 1px solid var(--terminal-border);
+            border-radius: 10px;
+            padding: 20px;
+            min-width: 300px;
+            max-width: 300px;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            flex-shrink: 0;
+        }
+
+        .card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 8px 25px rgba(0, 0, 0, 0.2);
+        }
+
+        .card h3 {
+            color: var(--command-color);
+            margin-bottom: 15px;
+            font-size: 18px;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+
+        .card p {
+            margin-bottom: 15px;
+            line-height: 1.6;
+        }
+
+        .card .tech-tags {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 5px;
+        }
+
+        /* Contact specific card styles */
+        .contact-card-item {
+            display: flex;
+            align-items: flex-start;
+            margin-bottom: 12px;
+            padding-bottom: 12px;
+            border-bottom: 1px solid var(--terminal-border);
+        }
+
+        .contact-card-item:last-child {
+            margin-bottom: 0;
+            padding-bottom: 0;
+            border-bottom: none;
+        }
+
+        .contact-card-icon {
+            font-size: 24px;
+            margin-right: 15px;
+            color: var(--highlight-color);
+            flex-shrink: 0;
+        }
+
+        .contact-card-content {
+            flex: 1;
+        }
+
+        .contact-card-title {
+            color: var(--command-color);
+            font-weight: bold;
+            margin-bottom: 5px;
+            font-size: 16px;
+        }
+
+        .contact-card-detail {
+            color: var(--text-color);
+            font-size: 14px;
+            line-height: 1.4;
+        }
+
+        .contact-card-link {
+            color: var(--command-color);
+            text-decoration: none;
+            transition: color 0.3s ease;
+        }
+
+        .contact-card-link:hover {
+            color: var(--highlight-color);
+            text-decoration: underline;
+        }
+
+        /* Navigation arrows */
+        .nav-arrow {
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+            background-color: var(--arrow-bg);
+            color: var(--bg-color);
+            border: none;
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+            cursor: pointer;
+            font-size: 20px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            transition: all 0.3s ease;
+            z-index: 100;
+        }
+
+        .nav-arrow:hover {
+            background-color: var(--arrow-hover);
+            transform: translateY(-50%) scale(1.1);
+            box-shadow: 0 4px 15px rgba(0, 102, 204, 0.4);
+        }
+
+        .nav-arrow:active {
+            transform: translateY(-50%) scale(0.95);
+        }
+
+        .nav-arrow.left {
+            left: 10px;
+        }
+
+        .nav-arrow.right {
+            right: 10px;
+        }
+
+        .nav-arrow:disabled {
+            background-color: var(--arrow-disabled);
+            cursor: not-allowed;
+        }
+
+        .nav-arrow:disabled:hover {
+            transform: translateY(-50%) scale(1);
+            box-shadow: none;
+        }
+
+        .close-cards-btn {
+            position: fixed;
+            top: 70px;
+            right: 20px;
+            background-color: var(--highlight-color);
+            color: var(--bg-color);
+            border: none;
+            padding: 8px 16px;
+            border-radius: 20px;
+            cursor: pointer;
+            font-family: inherit;
+            font-size: 14px;
+            font-weight: bold;
+            z-index: 1000;
+            display: none;
+            transition: all 0.3s ease;
+        }
+
+        .close-cards-btn:hover {
+            transform: scale(1.05);
+            box-shadow: 0 4px 15px rgba(255, 153, 0, 0.4);
+        }
+
+        /* Terminal contact styles */
+        .terminal-contact {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 15px;
+            margin-top: 10px;
+        }
+
+        .terminal-contact-item {
+            background-color: var(--contact-bg);
+            border: 1px solid var(--contact-border);
+            border-radius: 5px;
+            padding: 10px;
+            display: flex;
+            align-items: center;
+            flex: 1;
+            min-width: 200px;
+        }
+
+        .terminal-contact-icon {
+            font-size: 18px;
+            margin-right: 10px;
+            color: var(--highlight-color);
+        }
+
+        .terminal-contact-content {
+            flex: 1;
+        }
+
+        .terminal-contact-title {
+            font-weight: bold;
+            margin-bottom: 3px;
+            font-size: 13px;
+        }
+
+        .terminal-contact-detail {
+            font-size: 12px;
+        }
+
+        .terminal-contact-link {
+            color: var(--command-color);
+            text-decoration: none;
+        }
+
+        .terminal-contact-link:hover {
+            color: var(--highlight-color);
+            text-decoration: underline;
+        }
+
+        /* Suspended Screen Styles */
+        .suspended-screen {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: var(--suspended-bg);
+            display: none;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            z-index: 2000;
+            opacity: 0;
+            transition: opacity 0.5s ease;
+        }
+
+        .suspended-content {
+            text-align: center;
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .suspended-title {
+            font-size: 24px;
+            color: var(--suspended-text);
+            margin-bottom: 20px;
+            font-weight: bold;
+            letter-spacing: 2px;
+        }
+
+        .suspended-subtitle {
+            font-size: 18px;
+            color: var(--suspended-text);
+            margin-bottom: 30px;
+            opacity: 0.8;
+        }
+
+        .power-button {
+            background-color: var(--power-button);
+            color: var(--bg-color);
+            border: none;
+            border-radius: 50%;
+            width: 80px;
+            height: 80px;
+            font-size: 40px;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            box-shadow: none;
+            outline: none;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin: 0 auto;
+        }
+
+        .power-button:hover {
+            transform: scale(1.1);
+            /* Removed yellow circle box-shadow */
+        }
+
+        .shutdown-message {
+            color: var(--text-color);
+            margin-bottom: 10px;
+            font-size: 14px;
+        }
+
+        .shutdown-ok {
+            color: #00ff41;
+            font-weight: bold;
+        }
+
+        .shutdown-fail {
+            color: #ff6b6b;
+            font-weight: bold;
+        }
+
+        /* Loading Bar */
+        .loading-container {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0, 0, 0, 0.8);
+            display: none;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            z-index: 3000;
+        }
+
+        .loading-bar {
+            width: 300px;
+            height: 20px;
+            background-color: #333;
+            border-radius: 10px;
+            overflow: hidden;
+            margin-bottom: 20px;
+        }
+
+        .loading-progress {
+            height: 100%;
+            background-color: var(--highlight-color);
+            width: 0%;
+            transition: width 0.3s ease;
+        }
+
+        .loading-text {
+            color: var(--text-color);
+            font-size: 18px;
+            margin-top: 10px;
+        }
+
+        /* Horizontal command list */
+        .command-list {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+            margin-top: 10px;
+        }
+
+        .command-item {
+            background-color: var(--tech-tag-bg);
+            color: var(--text-color);
+            padding: 5px 10px;
+            border-radius: 15px;
+            font-size: 13px;
+            font-family: inherit;
+            white-space: nowrap;
+        }

@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ashok</title>
+    <link rel="stylesheet" href="assets/style.css">
+</head>
+<body data-theme="cosmic">
+    <button class="theme-toggle" onclick="toggleTheme()">🌙</button>
+    <button class="close-cards-btn" onclick="closeCards()">✕ Close Cards</button>
+    <div class="terminal" id="terminal">
+        <div class="terminal-header">
+            <div class="terminal-buttons">
+                <div class="btn close" onclick="shutdownTerminal()">✕</div>
+                <div class="btn minimize" onclick="minimizeTerminal()">−</div>
+                <div class="btn maximize" onclick="maximizeTerminal()">□</div>
+            </div>
+            <div class="terminal-title">Ashok@portfolio</div>
+        </div>
+
+        <div class="nav-buttons">
+            <button class="nav-btn" onclick="executeCommand('W ^About')">About</button>
+            <button class="nav-btn" onclick="executeCommand('W ^Skills')">Skills</button>
+            <button class="nav-btn" onclick="executeCommand('W ^Projects')">Projects</button>
+            <button class="nav-btn" onclick="executeCommand('W ^Certification')">Certification</button>
+            <button class="nav-btn" onclick="executeCommand('W ^Contact')">Contact</button>
+            <button class="nav-btn" onclick="executeCommand('W ^Resume')">Resume</button>
+        </div>
+        <div class="terminal-body" id="terminalBody">
+            <div class="ascii-art" id="asciiArt"></div>
+            <div class="output">
+<!--Available commands:-->
+<span class="mumps-command">W ^About</span> - Display about information
+<span class="mumps-command">W ^Projects</span> - Show project portfolio
+<span class="mumps-command">W ^Certification</span> - View certifications
+<span class="mumps-command">W ^Contact</span> - Contact information
+<span class="mumps-command">W #</span> - Clear terminal
+<span class="mumps-command">S terminal="windows"</span> - Change to windows
+<span class="mumps-command">W ^Help</span> - Show all commands
+Or use general commands: about, projects, certification, contact, help, clear, resume
+            </div>
+            <div class="command-line">
+                <span class="prompt">Ashok></span>
+                <input type="text" class="command-input" id="commandInput" autofocus>
+                <span class="cursor"></span>
+            </div>
+        </div>
+    </div>
+    <div class="cards-section" id="cardsSection">
+        <button class="nav-arrow left" id="leftArrow">‹</button>
+        <div class="cards-container">
+            <div class="cards-wrapper" id="cardsWrapper"></div>
+        </div>
+        <button class="nav-arrow right" id="rightArrow">›</button>
+    </div>
+    <!-- Suspended Screen -->
+    <div class="suspended-screen" id="suspendedScreen">
+        <div class="suspended-content">
+            <div class="suspended-title">[ SYSTEM SUSPENDED ]</div>
+            <div class="suspended-subtitle">Awaiting user reactivation</div>
+            <button class="power-button" onclick="reactivateTerminal()">⏻</button>
+        </div>
+    </div>
+    <!-- Loading Bar -->
+    <div class="loading-container" id="loadingContainer">
+        <div class="loading-bar">
+            <div class="loading-progress" id="loadingProgress"></div>
+        </div>
+        <div class="loading-text">Reactivating terminal...</div>
+    </div>
+    <script src="assets/script.js"></script>
+</body>
+</html>
